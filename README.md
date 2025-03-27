@@ -1,5 +1,7 @@
 # Evaluating machine learning models for predicting pesticides toxicity to honey bees
 
+![graphical_abstract.png](graphical_abstract.png)
+
 This repository contains code for building and evaluating machine learning models
 using [ApisTox dataset](https://github.com/j-adamczyk/ApisTox_dataset), from publication
 [in Scientific Data](https://www.nature.com/articles/s41597-024-04232-w).
