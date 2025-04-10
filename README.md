@@ -4,7 +4,7 @@
 
 This repository contains code for building and evaluating machine learning models
 using [ApisTox dataset](https://github.com/j-adamczyk/ApisTox_dataset), from publication
-[in Scientific Data](https://www.nature.com/articles/s41597-024-04232-w).
+[in Scientific Data](https://www.nature.com/articles/s41597-024-04232-w). ArXiv preprint is [available here](https://arxiv.org/abs/2503.24305).
 
 Dataset is shared under [CC-BY-NC-4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
 Code is shared under MIT license, except for `huggingmolecules` library code, which
