@@ -214,25 +214,12 @@ def make_barplot(datasets: dict, file_name: str, percentage: bool = True) -> Non
     df = pd.DataFrame(datasets.items(), columns=["Dataset", "Value"])
     df = df.sort_values(by="Value")
 
-    dataset_names = [
-        "BACE",
-        "BBBP",
-        "SIDER",
-        "ClinTox",
-        "ToxCast",
-        "Tox21",
-        "HIV",
-        "ApisTox",
-    ]
-    colors = sns.color_palette("Blues", len(dataset_names))
-    colors = {record: color for record, color in zip(dataset_names, colors)}
-
     plt.figure(figsize=(8, 5))
     barplot = sns.barplot(
         x="Value",
         y="Dataset",
         data=df,
-        palette=[colors[rec] for rec in datasets["Dataset"]],
+        palette="Blues",
     )
 
     if percentage:

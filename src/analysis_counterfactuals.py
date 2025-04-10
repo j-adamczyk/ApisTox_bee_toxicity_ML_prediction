@@ -42,8 +42,7 @@ def make_plots(
     smiles_test_neg = smiles_test[y_test == 0]
     smiles_test_pos = smiles_test[y_test == 1]
 
-    for i in range(50):
-        smi = smiles_test_neg[i]
+    for i, smi in enumerate(smiles_test_neg):
         model_func = lambda x: pipeline.predict(x)
         samples = exmol.sample_space(smi, model_func, num_samples=5000)
         cfs = exmol.cf_explain(samples, nmols=3, filter_nondrug=False)
